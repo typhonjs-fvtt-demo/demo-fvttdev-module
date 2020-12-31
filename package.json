@@ -1,0 +1,49 @@
+{
+  "name": "demo-fvttdev-module",
+  "version": "0.0.0",
+  "homepage": "https://github.com/typhonjs-fvtt/demo-fvttdev-module",
+  "description": "Provides a demo of using `fvttdev`, a zero config CLI, to bundle a module for Foundry VTT",
+  "license": "MIT",
+  "author": {
+    "name": "typhonrt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typhonjs-fvtt/demo-fvttdev-module.git"
+  },
+  "maintainers": [
+    {
+      "name": "typhonrt",
+      "email": "fvtt@typhonjs.io"
+    }
+  ],
+  "dependencies": {
+    "unique-names-generator": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "@typhonjs-fvtt/eslint-foundry.js": "^0.3.0",
+    "typhonjs-config-eslint": "^0.6.0"
+  },
+  "keywords": [
+    "typhonjs",
+    "foundry vtt",
+    "fvtt",
+    "module",
+    "fvttdev",
+    "demo"
+  ],
+  "scripts": {
+    "build-default": "fvttdev bundle",
+    "build-deploy": "fvttdev bundle -e deploy",
+    "build-deploy-compress": "fvttdev bundle -e deploy-compress",
+    "build-dev": "fvttdev bundle -e dev",
+    "build-dev-compress": "fvttdev bundle -e dev-compress",
+    "eslint": "eslint ."
+  },
+  "files": [],
+  "directories": {},
+  "bugs": {
+    "url": "https://github.com/typhonjs-fvtt/demo-fvttdev-module/issues"
+  }
+}
