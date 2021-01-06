@@ -1,5 +1,25 @@
 import DemoDialog from './src/DemoDialog.js';
 
+let a = 0;
+const b = 1;
+a ||= b;
+
+const c = 1_2;
+
+class Test
+{
+   // Public Fields
+   instanceProperty = "bork";
+
+   static staticProperty = "babelIsCool";
+
+   // Private Fields
+   #xValue = 'private_field';
+
+   printXValue() { console.log(`Test().#xValue: ${this.#xValue}`)}
+}
+
+
 const s_REPLACE_TEXT = 'THIS WILL BE REPLACED WITH - YO!';  // This text will be replaced with 'YO!'
 
 /**
@@ -9,6 +29,12 @@ const s_REPLACE_TEXT = 'THIS WILL BE REPLACED WITH - YO!';  // This text will be
  */
 Hooks.once('ready', async () =>
 {
+   console.log(`a ||= b: ${a}`);
+   console.log(`c: ${c}`);
+   console.log(`Test.staticProperty: ${Test.staticProperty}`);
+   console.log(`new Test().instanceProperty: ${new Test().instanceProperty}`);
+   new Test().printXValue();
+
    console.log('Hello world from demo-fvttdev-module!');
 
    console.log(`Just showing that you can do text replacement with a rollup plugin: ${s_REPLACE_TEXT}`);

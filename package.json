@@ -21,8 +21,8 @@
     "unique-names-generator": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
     "@typhonjs-fvtt/eslint-foundry.js": "^0.3.0",
+    "eslint": "^7.0.0",
     "typhonjs-config-eslint": "^0.6.0"
   },
   "keywords": [
