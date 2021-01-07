@@ -1,4 +1,7 @@
-import DemoDialog from './src/DemoDialog.js';
+import DemoDialog from './src/dialog/DemoDialog.js';
+
+// Show that you can use non named imports to link via ESM for bundling purposes.
+import './src/hooks/index.js';
 
 let a = 0;
 const b = 1;

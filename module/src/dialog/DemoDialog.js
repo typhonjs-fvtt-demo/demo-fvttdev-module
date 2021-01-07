@@ -1,10 +1,10 @@
-import uniqueNamesGenerator   from '../npm/unique-names-generator.js';  // Import the npm module
+import uniqueNamesGenerator from '../../npm/unique-names-generator.js';  // Import the npm module
 
-import dialogHTML             from '../templates/dialog.html';       // You can import strings w/ rollup-plugin-string
-import firstName              from '../json/elf-names-first.json';   // You can import JSON w/ @rollup/plugin-json
-import lastName               from '../json/elf-names-last.json';    // First and last elf names are loaded.
+import dialogHTML from '../../templates/dialog.html';       // You can import strings w/ rollup-plugin-string
+import firstName  from '../../json/elf-names-first.json';   // You can import JSON w/ @rollup/plugin-json
+import lastName   from '../../json/elf-names-last.json';    // First and last elf names are loaded.
 
-import '../sass/dialog.scss';                                        // Import the scss file so Rollup picks it up.
+import '../../sass/dialog.scss';                                        // Import the scss file so Rollup picks it up.
 
 /**
  * Basic dialog extension w/ static show method.
