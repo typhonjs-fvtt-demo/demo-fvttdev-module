@@ -4,6 +4,7 @@
   "homepage": "https://github.com/typhonjs-fvtt/demo-fvttdev-module",
   "description": "Provides a demo of using `fvttdev`, a zero config CLI, to bundle a module for Foundry VTT",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "typhonrt"
   },
@@ -17,13 +18,12 @@
       "email": "fvtt@typhonjs.io"
     }
   ],
-  "dependencies": {
-    "unique-names-generator": "^4.0.0"
-  },
   "devDependencies": {
-    "@typhonjs-fvtt/eslint-foundry.js": "^0.3.0",
+    "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
+    "@typhonjs-fvtt/fvttdev": "typhonjs-fvtt/fvttdev",
     "eslint": "^7.0.0",
-    "typhonjs-config-eslint": "^0.6.0"
+    "typhonjs-config-eslint": "^0.6.0",
+    "unique-names-generator": "^4.0.0"
   },
   "keywords": [
     "typhonjs",
