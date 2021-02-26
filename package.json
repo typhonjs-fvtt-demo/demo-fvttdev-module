@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
-    "@typhonjs-fvtt/fvttdev": "typhonjs-fvtt/fvttdev",
+    "@typhonjs-fvtt/fvttdev": "^0.0.0",
     "eslint": "^7.0.0",
     "typhonjs-config-eslint": "^0.6.0"
   },
