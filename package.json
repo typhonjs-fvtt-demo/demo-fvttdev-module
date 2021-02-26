@@ -18,12 +18,14 @@
       "email": "fvtt@typhonjs.io"
     }
   ],
+  "dependencies": {
+    "unique-names-generator": "^4.0.0"
+  },
   "devDependencies": {
     "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
     "@typhonjs-fvtt/fvttdev": "typhonjs-fvtt/fvttdev",
     "eslint": "^7.0.0",
-    "typhonjs-config-eslint": "^0.6.0",
-    "unique-names-generator": "^4.0.0"
+    "typhonjs-config-eslint": "^0.6.0"
   },
   "keywords": [
     "typhonjs",
