@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
-    "@typhonjs-fvtt/fvttdev": "^0.0.1",
+    "@typhonjs-fvtt/fvttdev": "^0.0.2",
     "eslint": "^7.0.0",
     "typhonjs-config-eslint": "^0.6.0"
   },
@@ -36,6 +36,7 @@
     "demo"
   ],
   "scripts": {
+    "build-default-debug": "env DEBUG=* fvttdev bundle",
     "build-default": "fvttdev bundle",
     "build-deploy": "fvttdev bundle -e deploy",
     "build-deploy-compress": "fvttdev bundle -e deploy-compress",
