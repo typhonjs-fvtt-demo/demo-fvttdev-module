@@ -9,15 +9,13 @@
   // ESLint configs are prone to particular choices, so if the first config below doesn't work for you then replace
   // with one that you do prefer. The second config defines globals defined in `foundry.js` for use w/ `no-shadow`.
   "extends": [
-    "./node_modules/typhonjs-config-eslint/3.0/basic/es8/server/node/.eslintrc",
+    "@typhonjs-config/eslint-config/esm/2021/browser",
     "@typhonjs-fvtt/eslint-config-foundry.js"
   ],
 
   // Defines / overrides a few more environment parameters not provided in the configs above.
   "env": {
-    "jquery": true,
-    "es2020": true,
-    "browser": true
+    "jquery": true
   },
 
   // Prevents overwriting any built in globals particularly from `@typhonjs-fvtt/eslint-config-foundry.js`, but also
