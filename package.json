@@ -23,8 +23,9 @@
   },
   "devDependencies": {
     "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
-    "@typhonjs-fvtt/fvttdev": "^0.0.5",
-    "@typhonjs-node-utils/build-test": "^0.1.0"
+    "@typhonjs-fvtt/fvttdev": "^0.0.7",
+    "@typhonjs-node-utils/build-test": "^0.1.0",
+    "cross-env": "^7.0.0"
   },
   "keywords": [
     "typhonjs",
@@ -36,12 +37,13 @@
   ],
   "scripts": {
     "show-help-bundle": "fvttdev bundle --help",
-    "build-default-debug": "env DEBUG=* fvttdev bundle",
-    "build-default": "fvttdev bundle",
-    "build-deploy": "fvttdev bundle -e deploy",
-    "build-deploy-compress": "fvttdev bundle -e deploy-compress",
-    "build-dev": "fvttdev bundle -e dev",
-    "build-dev-compress": "fvttdev bundle -e dev-compress",
+    "show-help-bundle-debug": "cross-env DEBUG=* fvttdev bundle --help",
+    "bundle-default-debug": "cross-env DEBUG=* fvttdev bundle",
+    "bundle-default": "fvttdev bundle",
+    "bundle-deploy": "fvttdev bundle -e deploy",
+    "bundle-deploy-compress": "fvttdev bundle -e deploy-compress",
+    "bundle-dev": "fvttdev bundle -e dev",
+    "bundle-dev-compress": "fvttdev bundle -e dev-compress",
     "eslint": "eslint ."
   },
   "files": [],
