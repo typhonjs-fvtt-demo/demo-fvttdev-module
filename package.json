@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
-    "@typhonjs-fvtt/fvttdev": "^0.0.18"
+    "@typhonjs-fvtt/fvttdev": "^0.0.19"
   },
   "keywords": [
     "typhonjs",
@@ -29,6 +29,7 @@
     "bundle-deploy-compress": "fvttdev bundle -e deploy-compress",
     "bundle-dev": "fvttdev bundle -e dev",
     "bundle-dev-compress": "fvttdev bundle -e dev-compress",
+    "validate-manifest+": "fvttdev validate:manifest --plus",
     "eslint": "eslint ."
   },
   "bugs": "https://github.com/typhonjs-fvtt/demo-fvttdev-module/issues",
